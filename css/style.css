@@ -1,0 +1,487 @@
+*,
+ ::before,
+ ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #fff;
+    height: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+
+/* EN TETE DE PAGE : LE HEADER */
+
+.header {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: rgb(244, 244, 247);
+    border-bottom: 1px solid #000;
+    color: rgb(10, 10, 10);
+}
+
+.search-account {
+    position: absolute;
+    top: 35%;
+    right: 15%;
+}
+
+.header__textCenter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+/* EMPLACEMENT DU TITRE OU LOGO */
+
+.header__logo {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    color: inherit;
+    font-size: 25px;
+    font-weight: 700;
+    margin: 40px;
+}
+
+
+/* MENU DE NAVIGATION PRINCIPALE */
+
+.list-menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    font-size: 20px;
+    color: inherit;
+    margin: 40px;
+}
+
+
+/* MENU FORMATION ET CONTACT */
+
+.list-menu a {
+    list-style-type: none;
+    color: inherit;
+    text-decoration: none;
+}
+
+.menu {
+    cursor: pointer;
+    margin: 0 25px;
+}
+
+.menu:hover>ul {
+    display: block;
+}
+
+
+/* CARACTERE UNICODE : PETIT TRIANGLE TOURNER VER LE BAS */
+
+.menu span {
+    font-size: 17px;
+}
+
+
+/* SOUS MENU DE NAVIGATION PRINCIPALE NOTAMANT: LE MENU
+--PRESTATION DE SERVICES-- */
+
+.list-sous-menu {
+    position: relative;
+    top: 15px;
+    display: none;
+}
+
+.sous-menu {
+    list-style-type: none;
+    text-align: center;
+    padding: 7px 7px;
+    background: #fff;
+    border-bottom: 1px solid #000;
+}
+
+.sous-menu:hover {
+    background: rgba(54, 54, 54, 0.5);
+}
+
+
+/* HEADER__IMAGE*/
+
+.banniere {
+    background: no-repeat center center /cover url("../img/helpdesk.jpg");
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    margin-top: 80px;
+}
+
+.banniere h1 {
+    font-size: 30px;
+    padding: 10px 0;
+}
+
+.banniere p {
+    font-size: 20px;
+    padding: 10px 0;
+}
+
+.button {
+    padding: 10px 20PX;
+    font-size: 17px;
+    text-decoration: none;
+    color: red;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    margin: 20px 10px;
+}
+
+.button:hover {
+    background: #fff;
+}
+
+
+/*
+INTERFACE DE CONNEXION                       
+
+
+
+*/
+
+.connexion-position {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.connected {
+    position: relative;
+    font-size: 25px;
+    margin: 28px 10px;
+}
+
+.boutonDeConnexion {
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: ;
+    background-color: #fff;
+    border: 1px solid #fff;
+    border-radius: 28px;
+}
+
+
+/*button contatez */
+
+button {
+    cursor: pointer;
+    padding: 10px 20px 10px 20px;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+}
+
+
+/* contenu du side a parti du header*/
+
+.site-content {
+    padding: 100px 20px;
+    margin-top: 100px;
+}
+
+.container {
+    padding: 20px 15px 0 15px;
+    margin: -20px 89.500px 0 89.500px;
+}
+
+
+/* notion de grid*/
+
+.grid>div {
+    background-color: #fff;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 8fr 5fr;
+    grid-column-gap: 20px;
+}
+
+.budget {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.budget-png img {
+    text-align: center;
+}
+
+
+/*PARTIE FORMULAIRE*/
+
+.sidebar {
+    padding: 60px 48px;
+}
+
+.Expert {
+    padding-bottom: 25px;
+    font-size: 25px;
+}
+
+form {
+    padding: 15px 15px;
+}
+
+
+/* PARTIE IMAGE D'UN CODEUR + COMMENTAIRE*/
+
+.form {
+    padding: 20px;
+}
+
+.Tcode {
+    margin-bottom: 25px;
+    font-size: 35px;
+    font-family: cursive;
+}
+
+
+/* Tarif des conception et de dev +  autres*/
+
+.budget {
+    padding: 75px 20px 75px 20px;
+}
+
+
+/* LE PIED DE PAGE */
+
+footer {
+    flex-shrink: 0;
+    border-top: 1px dashed #000;
+    background: rgb(22, 22, 22);
+    width: 100%;
+    color: #FFF;
+}
+
+
+/* CONTENU DU PIED DE PAGE */
+
+.contenu-footer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 50px 0 100px;
+    font-size: 20px;
+}
+
+
+/* LES DIFFERENTES BOC DE PIED DE PAGE */
+
+.bloc {
+    width: 25%;
+    margin: 0 30px;
+}
+
+.footer-services h3,
+.footer-contact h3 {
+    font-size: 22px;
+    padding-bottom: 20px;
+}
+
+.footer-contact p {
+    padding: 5px 0;
+}
+
+
+/* CONTENU DES DIFFERENTES BLOC DE PIED DE PAGE  */
+
+.liste_services,
+.social-icons {
+    list-style-type: none;
+}
+
+.social-icons a {
+    text-decoration: none;
+    font-size: 22px;
+    color: #fff;
+}
+
+
+/* Services liste */
+
+.liste_services li {
+    padding: 2px 0;
+}
+
+.liste_services a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.liste-services a:hover {
+    color: rgba(34, 33, 34, 0.933);
+}
+
+
+/*social-icons*/
+
+.social {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+ul .social-icons {
+    text-decoration: none;
+    color: rgb(29, 28, 28);
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-size: 25px;
+}
+
+.social-icons a:hover {
+    color: #000;
+}
+
+.social-icons a img {
+    width: 25px;
+}
+
+
+/* LE WEBMASTER */
+
+.webmaster {
+    border-top: 5px solid #000;
+    background: #fff;
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+}
+
+
+/*INDEX STYLE CSS*/
+
+.imageElectronic {
+    text-align: center;
+}
+
+.titre {
+    padding: 25px;
+    margin: 40px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.site-content p {
+    text-align: center;
+    margin: 15px 0;
+}
+
+.site-content a {
+    text-decoration: none;
+}
+
+.avis {
+    display: inline;
+    padding: 0 150px;
+}
+
+.avis img {
+    width: 313px;
+    height: 369px;
+}
+
+.vide {
+    margin: 100px 0;
+    padding: 50px 0;
+}
+
+.displayflex {
+    display: inline;
+}
+
+.services {
+    display: flex;
+}
+
+.hor {
+    padding: 15px;
+    margin: 35px 0;
+}
+
+.hor h2 {
+    padding: 15px 0;
+    margin: 30px 0;
+}
+
+.tel {
+    padding: 15px;
+    margin: 35px 0;
+}
+
+.lien {
+    padding: 15px;
+    margin: 35px 0;
+}
+
+.lien a {
+    color: rgb(189, 72, 72);
+    font-weight: 700;
+}
+
+.mail {
+    padding: 15px;
+    margin: 35px 0;
+}
+
+.mail a {
+    color: rgb(245, 60, 131);
+}
+
+
+/*formulaire style*/
+
+form {
+    /* border: 5px solid #428; */
+    padding: 20px;
+    margin: 20px;
+}
+
+.c100 {
+    /* border: 8px solid blue; */
+    padding: 20px;
+    margin: 10px;
+}
+
+input {
+    padding: 10px;
+}
